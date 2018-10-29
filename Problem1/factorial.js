@@ -16,7 +16,5 @@ function calculateFactorial() {
         }
         console.log(factorialInput);
     }
-        
-    // test commit
     
 }
