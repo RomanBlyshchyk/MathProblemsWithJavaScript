@@ -13,9 +13,11 @@
         <div class="container">
             <h2>Factorial Problem:</h2>
             <br/>
-            <input id="factorialInput"/>
-            <button id="Calculate" onclick="calculateFactorial()">Calculate!</button>
-
+            <form oninput="result.value=calculateFactorial(input.value)">
+                <input type="number" id="input" value=0> <!-- I think there is an issue with type="number". form crashes when I get to zero or below. weird.-->
+                <br/>
+                <output name="result" for="input"></output>
+            </form>
 
         </div>
 
